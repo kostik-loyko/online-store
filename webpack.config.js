@@ -18,7 +18,7 @@ const esLintPlugin = (isDev) => isDev ? [] : [new ESlintPlugin({ extensions: ['t
 module.exports = ({ develop }) => ({
   mode: develop ? 'development' : 'production',
   devtool: develop ? 'inline-source-map' : false,
-  entry: './src/index.ts',
+  entry: './src/script/index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -70,7 +70,7 @@ module.exports = ({ develop }) => ({
       ]
     }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    // ...esLintPlugin(develop)
+    ...esLintPlugin(develop)
   ],
   ...devServer(develop)
 });
