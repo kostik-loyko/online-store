@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+
+  &__description {}
+
+  &__link {
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.rss-link {
+
+  &__img {
+    width: 5rem;
+    height: 2rem;
+  }
+}

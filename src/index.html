@@ -13,10 +13,10 @@
     <div class="wrapper">
       <div class="header">
         <div class="logo">
-          <h1 class="logo__title">Phone Store</h1>
+          <h1 class="logo__title">Christmas Store</h1>
         </div>
         <div class="card">
-          <img class="card__img" src="./asset/basket-button.svg" alt="card">
+          <img class="card__img" src="./asset/icons/basket-button.svg" alt="card">
           <span class="card__counter"></span>
         </div>
       </div>
@@ -26,36 +26,37 @@
           <div class="features__description description">
             <p class="description__shape shape">Форма:</p>
             <ul class="shape__items">
-              <li class="shape__item">Шар</li>
-              <li class="shape__item">Шишка</li>
-              <li class="shape__item">Снежинка</li>
-              <li class="shape__item">Фигурка</li>
-              <li class="shape__item">Колокольчик</li>
+              <li class="shape__item"><img class="ball" src="./asset/icons/ball.png" alt="ball"></li>
+              <li class="shape__item"><img src="./asset/icons/cone.png" alt="cone" class="cone"></li>
+              <li class="shape__item"><img src="./asset/icons/snowflake.svg" alt="snowflake" class="snowflake"></li>
+              <li class="shape__item"><img src="./asset/icons/man.png" alt="man" class="man"></li>
+              <li class="shape__item"><img src="./asset/icons/bell.png" alt="bell" class="bell"></li>
             </ul>
           </div>
           <div class="features__description description">
             <p class="description__color color">Цвет:</p>
             <ul class="color__items">
-              <li class="color__item">Белый</li>
-              <li class="color__item">Желтый</li>
-              <li class="color__item">Красный</li>
-              <li class="color__item">Зеленый</li>
-              <li class="color__item">Синий</li>
+              <li class="color__item color__item_white"></li>
+              <li class="color__item color__item_yellow"></li>
+              <li class="color__item color__item_green"></li>
+              <li class="color__item color__item_red"></li>
+              <li class="color__item color__item_blue"></li>
             </ul>
           </div>
           <div class="features__description description">
             <p class="description__size size">Размер:</p>
             <ul class="size__items">
-              <li class="size__item">Малый</li>
-              <li class="size__item">Средний</li>
-              <li class="size__item">Большой</li>
+              <li class="size__item size__item_small">3см</li>
+              <li class="size__item size__item_medium">5см</li>
+              <li class="size__item size__item_large">10см</li>
             </ul>
           </div>
           <div class="features__description description">
             <p class="description__favorite favorite"></p>
-            <label>
+            <label class="favorite__check">
               Только популярные:
-              <input type="checkbox">
+              <input class="favorite__check-input" type="checkbox">
+              <sapn class="favorite__check-box"></sapn>
             </label>
           </div>
         </div>
@@ -77,8 +78,7 @@
           </div>
           <div class="edit__container">
             <h2 class="edit__title">Сортировка</h2>
-            <input class="edit__select select" type="button" value="По названию, от А до Я">
-            <span class="select__arrow"></span>
+            <input class="edit__select select" type="button" data-value='one' value="По названию, от А до Я">
             <ul class="select__items">
               <li class="select__item" data-value='one'>По названию, от А до Я</li>
               <li class="select__item" data-value='two'>По названию, от Я до А</li>
@@ -99,7 +99,8 @@
           <p class="copyright__description">© 2022</p>
           <a href="https://github.com/kostik-loyko" class="copyright__link">kostik-loyko</a>
         </div>
-        <a href="https://rs.school/js/" class="rss-link"><img src="asset/rs_school_js.svg" alt="rs school js"></a>
+        <a href="https://rs.school/js/" class="rss-link"><img class="rss-link__img" src="asset/icons/rs_school_js.svg"
+            alt="rs school js"></a>
       </footer>
     </div>
   </div>
