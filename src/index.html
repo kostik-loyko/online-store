@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+          <h1 class="logo__title">Christmas Store</h1>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./asset/icons/basket-button.svg" alt="card">
+          <span class="card__counter"></span>
+        </div>
+      </div>
+      <div class="products">
+        <div class="products__features features">
+          <h2 class="features__title">Фильтры по значению</h2>
+          <div class="features__description description">
+            <p class="description__shape shape">Форма:</p>
+            <ul class="shape__items">
+              <li class="shape__item"><img class="ball" src="./asset/icons/ball.png" alt="ball"></li>
+              <li class="shape__item"><img src="./asset/icons/cone.png" alt="cone" class="cone"></li>
+              <li class="shape__item"><img src="./asset/icons/snowflake.svg" alt="snowflake" class="snowflake"></li>
+              <li class="shape__item"><img src="./asset/icons/man.png" alt="man" class="man"></li>
+              <li class="shape__item"><img src="./asset/icons/bell.png" alt="bell" class="bell"></li>
+            </ul>
+          </div>
+          <div class="features__description description">
+            <p class="description__color color">Цвет:</p>
+            <ul class="color__items">
+              <li class="color__item color__item_white"></li>
+              <li class="color__item color__item_yellow"></li>
+              <li class="color__item color__item_green"></li>
+              <li class="color__item color__item_red"></li>
+              <li class="color__item color__item_blue"></li>
+            </ul>
+          </div>
+          <div class="features__description description">
+            <p class="description__size size">Размер:</p>
+            <ul class="size__items">
+              <li class="size__item size__item_small">3см</li>
+              <li class="size__item size__item_medium">5см</li>
+              <li class="size__item size__item_large">10см</li>
+            </ul>
+          </div>
+          <div class="features__description description">
+            <p class="description__favorite favorite"></p>
+            <label class="favorite__check">
+              Только популярные:
+              <input class="favorite__check-input" type="checkbox">
+              <sapn class="favorite__check-box"></sapn>
+            </label>
+          </div>
+        </div>
+        <div class="products__ranges ranges">
+          <h2 class="ranges__title">Фильтры по диапазону</h2>
+          <div class="ranges__description description">
+            <p class="description__amount">Количество на складе:</p>
+            <div class="amount">Ползунок</div>
+          </div>
+          <div class="ranges__description description">
+            <p class="description__year">Год выхода на рынок:</p>
+            <div class="year">Ползунок</div>
+          </div>
+        </div>
+        <div class="products__edit edit">
+          <div class="edit__container">
+            <h2 class="edit__title">Поиск</h2>
+            <input class="edit__search" type="search" placeholder="Найти товар">
+          </div>
+          <div class="edit__container">
+            <h2 class="edit__title">Сортировка</h2>
+            <input class="edit__select select" type="button" data-value='one' value="По названию, от А до Я">
+            <ul class="select__items">
+              <li class="select__item" data-value='one'>По названию, от А до Я</li>
+              <li class="select__item" data-value='two'>По названию, от Я до А</li>
+              <li class="select__item" data-value='three'>По году, по возрастанию</li>
+              <li class="select__item" data-value='four'>По году, по убыванию</li>
+              <li class="select__item" data-value='five'>По количеству, по возростанию</li>
+              <li class="select__item" data-value='six'>По количеству, по убыванию</li>
+            </ul>
+          </div>
+          <div class="edit__container">
+            <button class="edit__reset-filters btn" type="button">Сброс фильтров</button>
+            <button class="edit__reset-edit btn" type="button">Сброс настроек</button>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="copyright">
+          <p class="copyright__description">© 2022</p>
+          <a href="https://github.com/kostik-loyko" class="copyright__link">kostik-loyko</a>
+        </div>
+        <a href="https://rs.school/js/" class="rss-link"><img class="rss-link__img" src="asset/icons/rs_school_js.svg"
+            alt="rs school js"></a>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
